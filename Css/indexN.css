@@ -1,0 +1,401 @@
+/* Start Global Rolse */
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --main-transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #fffada;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+/* End Global Rolse */
+/* Start Explore */
+.explore{
+    position: relative;
+    color: #a0583c;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 48px;
+}
+.explore::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 37%;
+    left: 20px;
+    top: 49%;
+    background-color: #a0583c;
+}
+.explore::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 37%;
+    right: 20px;
+    top: 49%;
+    background-color: #a0583c;
+}
+/* End Explore */
+/* Start navAndheader */
+.navAndheader{
+    background-image: url(../imge/1677257350569.jpg);
+    background-size: cover;
+    height: 649px;
+}
+/* End navAndheader */
+/* Start Nav */
+
+.nav{
+    background-color: #3b2f2b91;
+}
+.nav .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+    grid-gap: 6px;
+}
+.nav .container .logo p{
+    color: white;
+    font-size: 30px;
+    margin-left: 54px;
+}
+.nav .container .centar{
+    margin: auto 0;
+}
+.nav .container .centar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .container .centar ul li a{
+    margin: 0 15px;
+    font-size: 17px;
+    color: white;
+}
+.nav .container .rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav .container .rightSide > p{
+    background-color: #a0583c;
+    padding: 10px 16px;
+    border-radius: 7px;
+    color: white;
+}
+.nav .container .rightSide .apple .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a0583c;
+    color: white;
+    height: 38.39px;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+.nav .container .rightSide .apple i{
+    color: white;
+}
+/* End Nav */
+/* Start Header */
+/* .overlay{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 164%;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(0 0 0 / 12%);
+} */
+
+.header .container .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+} 
+.header .container .text h2{
+    font-size: 70px;
+    color: #fffada;
+}
+.header .container .text p{
+    color: #fffada8f;
+    font-size: 23px;
+    position: relative;
+    bottom: 63px;
+}
+.header .container .text span{
+    background-color: #a66044;
+    padding: 14px 56px;
+    border-radius: 0px 13px;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    bottom: 28px;
+}
+/* End Header */
+
+/* Start Features */
+.features{
+    margin: 60px 44px;
+}
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 28px;
+}
+.features .container .box{
+    padding: 20px;
+    background-color: #c08267;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    transition: transform var(--main-transition);
+}
+.features .container .box:hover{
+    transform: translateY(-15px);
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 15px;
+    transition: var(--main-transition);
+}
+.features .container .box img{
+    width: -webkit-fill-available;
+    border-radius: 10px;
+}
+.features .container .box > h2{
+    color: white;
+    font-weight: 700;
+}
+.features .container .box > p{
+    color: #e9bf9a;
+    line-height: 1.4;
+    font-weight: 600;
+
+}
+.features .container .box .order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features .container .box .order h2{
+    color: white;
+}
+.features .container .box .order p{
+    font-size: 21px;
+    background-color: #a0583c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.features .container .box .order p:hover{
+    transition: var(--main-transition);
+    background-color: white;
+    color: #a0583c;
+    font-weight: 700;
+}
+/* End Features */
+/* Start Brand */
+.brand{
+    margin: 60px 44px;
+}
+.brand .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 28px;
+}
+.brand .container img{
+    width: -webkit-fill-available;
+}
+.brand .container img:hover{
+    animation: hover 0.7s;
+}
+@keyframes hover{
+    0%, 40%{
+        opacity: 1;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+/* End Brand */
+/* Start Footer */
+.footer{
+    background-color: #c08267;
+    padding-top: 1px;
+}
+.explore_footer{
+    position: relative;
+    color: #ffffffeb;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.explore_footer::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 37%;
+    left: 20px;
+    top: 49%;
+    background-color: white;
+}
+.explore_footer::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 37%;
+    right: 20px;
+    top: 49%;
+    background-color: white;
+}
+.footer .container{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.footer .container .merchandise h2{
+    color: white;
+    font-weight: 700;
+}
+.footer .container .merchandise p{
+    color: #fffada;
+    font-weight: 500;
+}
+.footer .container .franchise h2{
+    color: white;
+    font-weight: 700;
+}
+.footer .container .franchise p{
+    color: #fffada;
+    font-weight: 500;
+}
+.footer .container .about h2{
+    color: white;
+    font-weight: 700;
+}
+.footer .container .about p{
+    color: #fffada;
+    font-weight: 500;
+}
+.footer .container .follow h2{
+    color: white;
+    font-weight: 700;
+}
+.footer .container .follow i{
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+.footer hr{
+    height: 2px;
+    overflow: visible;
+    background-color: #fffada;
+    margin: 60px 50px 0px;
+}
+.end_footer{
+    text-align: center;
+}
+.end_footer .container-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end_footer .container-a i{
+    font-size: 30px;
+    color: white;
+}
+.end_footer .container-a span{
+    margin: 0px 10px;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+.end_footer .container-a p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+/* End Footer */
+/* Start Media */
+@media (max-width: 767px){
+    .nav .container .logo p{
+        text-align: center;
+        margin-left: 0;
+    }
+    .nav .container .centar{
+        margin: 5px;
+    }
+    .navAndheader{
+        background-image: none;
+    }
+    .header .container .text h2{
+        color: #a0583c;
+        font-size: 50px;
+    }
+    .header .container .text p{
+        color: #c08267;
+        font-size: 20px;
+        position: relative;
+        bottom: 60px;
+    }
+    .explore::before, .explore::after{
+        width: 15%;
+    }
+    .explore_footer::before, .explore_footer::after{
+        width: 18%;
+    }
+    .footer .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .footer .container .about,
+    .footer .container .franchise,
+    .footer .container .follow,
+    .footer .container .merchandise{
+        text-align: center;
+    }
+}
+@media (max-width:980px){
+    .nav .container .logo p{
+        position: relative;
+        left: 406px;
+    }
+    .nav .container .centar ul{
+        position: relative;
+        right: 227px;
+        top: 42px;
+    }
+    .nav .container .rightSide{
+        position: relative;
+        left: 249px;
+    }
+    .explore::after, .explore::before{
+        width: 34%;
+    }
+    .features .container, .brand .container{
+        grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+    }
+}
+/* End Media */
+
+
+/*                           الحمد لله الذي اتم علينا هذا                                  */
